@@ -1,20 +1,22 @@
 import React from 'react';
+import sunset from '/src/assets/img/sunset.jpg';
+
 
 function NightLifeInfo() {
   return (
     <div className="nightlife-info">
       <div className="grid-container">
         <div className="grid-item item1">
-          <p>Photo 1 - Main Event</p>
+          <img src={sunset} alt="Sunset in Thessaloniki" />
         </div>
         <div className="grid-item item2">
-          <p>Photo 2 - Bar Street</p>
+          <p>A city that inspires</p>
         </div>
         <div className="grid-item item3">
-          <p>Photo 3 - Clubs</p>
+          <p>Delicious food</p>
         </div>
         <div className="grid-item item4">
-          <p>Photo 4 - Live Music</p>
+          <p>Amazing and warm folk</p>
         </div>
       </div>
     </div>
