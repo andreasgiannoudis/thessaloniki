@@ -1,0 +1,66 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: $primary-text-color;
+    background-color: $primary-color;
+  }
+  
+ 
+  main {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    margin-bottom: 1rem; /* Add space between paragraphs */
+  }
+  
+  .container {
+    display: flex; /* Flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Space between items */
+  }
+  
+  /* Basic Card Styling */
+  .card {
+    background-color: white; /* White background for cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    padding: 20px; /* Padding inside cards */
+    flex: 1 1 300px; /* Flex grow/shrink basis */
+  }
+  
+  /* Responsive Typography */
+  h1 {
+    font-size: 2.5rem; /* Large headings */
+  }
+  
+  h2 {
+    font-size: 2rem; /* Medium headings */
+  }
+  
+  h3 {
+    font-size: 1.75rem; /* Smaller headings */
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem; /* Smaller heading on mobile */
+    }
+  
+    h2 {
+      font-size: 1.5rem; /* Smaller heading on mobile */
+    }
+  
+    .container {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
+    }
+  }
+  
