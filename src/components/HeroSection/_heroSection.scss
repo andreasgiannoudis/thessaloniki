@@ -1,6 +1,6 @@
 .hero-section {
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -17,23 +17,16 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center the overlay */
-  width: 80%; /* You can adjust this for your preferred size */
-  height: 50%; /* Adjust height to your needs */
-  background: rgba(255, 255, 255, 0.5); /* Subtle white tint */
-  border-radius: 20px; /* Rounded corners */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #333;
-  padding: 20px; /* Add some padding inside the overlay */
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin-left: 50px;
+  color: #fff;
+  padding: 20px;
 }
 /* Title Styling */
 .hero-title {
   font-size: 3rem;
-  color: $dark-text-color;
+  color: #fff;
   margin-bottom: 1rem;
 }
 

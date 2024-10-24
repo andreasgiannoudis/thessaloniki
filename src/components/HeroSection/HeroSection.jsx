@@ -7,9 +7,8 @@ function HeroSection() {
       <img src={thessaloniki1} alt="Thessaloniki 1" className="hero-image" />
 
       <div className="hero-overlay">
-        <h1 className="hero-title">Explore Thessaloniki</h1>
-        <h3>A place full of joy and love</h3>
-        <button className="discover-btn">Discover More</button>
+        <h1 className="hero-title">Thessaloniki</h1>
+        <h3>Explore a place full of joy and love!</h3>
       </div>
 
     </div>
