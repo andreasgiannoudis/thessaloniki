@@ -1,16 +1,15 @@
 import './App.scss'
 import Header from './components/Header/Header'
-import HeroSection from './components/HeroSection/HeroSection'
-import NightLifeInfo from './components/NightLifeInfo/NightLifeInfo'
+
 import Footer from './components/Footer/Footer'
+import HomePage from './pages/Homepage/HomePage'
 
 function App() {
 
   return (
     <>
       <Header />
-      <HeroSection />
-      <NightLifeInfo />
+      <HomePage />
       <Footer />
     </>
   )

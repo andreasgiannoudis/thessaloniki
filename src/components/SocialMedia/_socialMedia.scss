@@ -1,0 +1,34 @@
+.social-media {
+    display: flex;
+    flex-direction: column; /* Stack the icons vertically */
+    gap: 20px; /* Space between the icons */
+    align-items: flex-end; /* Align the icons to the right (optional, adjust based on your layout) */
+  }
+  
+  .social-media a {
+    color: #fff; /* Default color of the icons */
+    font-size: 1.5rem; /* Size of the icons */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .social-media a:hover {
+    color: $primary-color; /* Hover color for the icons, replace with your desired color */
+  }
+  
+  .social-media a:focus {
+    outline: none;
+    color: $secondary-color; /* Focus color for accessibility */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .social-media {
+      align-items: center; /* Center the icons on smaller screens */
+      gap: 15px; /* Adjust gap for mobile screens */
+    }
+  
+    .social-media a {
+      font-size: 1.2rem; /* Slightly smaller icons on mobile */
+    }
+  }
+  

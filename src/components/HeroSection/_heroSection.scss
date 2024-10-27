@@ -18,42 +18,30 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  margin-left: 50px;
+  width: 80%;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
 }
+
 /* Title Styling */
 .hero-title {
   font-size: 3rem;
   color: #fff;
-  margin-bottom: 1rem;
-}
-
-/* Discover Button Styling */
-.discover-btn {
-  background-color: $secondary-color;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  text-transform: uppercase;
-}
-
-.discover-btn:hover {
-  background-color: $primary-color; /* Slightly lighter on hover */
+  margin-bottom: 0.5rem;
 }
 
 /* Responsive Styling */
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 2rem; /* Smaller title on mobile */
+    font-size: 2rem;
   }
 
-  .discover-btn {
-    font-size: 1rem;
-    padding: 0.6rem 1.2rem;
+  .hero-overlay {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }

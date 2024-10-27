@@ -62,7 +62,7 @@
             }
   
             &:hover {
-              color: $secondary-color;
+              // color: $secondary-color;
               &::after {
                 background-color: $secondary-color;
                 transform: scaleX(1);
