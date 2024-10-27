@@ -30,13 +30,13 @@ function Header() {
       }`}
     >
       <nav>
-        <ul class="main-menu">
+        <ul className="main-menu">
           <li>
             <a href="#">Home</a>
           </li>
-          <li class="has-submenu">
+          <li className="has-submenu">
             <a href="#">What to do</a>
-            <ul class="submenu">
+            <ul className="submenu">
               <li>
                 <a href="#">Nightlife</a>
               </li>
