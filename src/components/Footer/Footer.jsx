@@ -7,7 +7,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-logo">
-          <h2>Logo</h2>
+          <h2>Thessify</h2>
         </div>
         <div className="footer-links">
           <ul>

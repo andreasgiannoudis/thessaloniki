@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function Header() {
   const [isScrollingUp, setIsScrollingUp] = useState(true);
@@ -16,24 +16,53 @@ function Header() {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [lastScrollY]);
 
   return (
-    <header className={`${isScrollingUp ? 'header visible' : 'header hidden'} ${navActive ? 'nav-active' : ''}`}>
+    <header
+      className={`${isScrollingUp ? "header visible" : "header hidden"} ${
+        navActive ? "nav-active" : ""
+      }`}
+    >
       <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">History</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="main-menu">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li class="has-submenu">
+            <a href="#">What to do</a>
+            <ul class="submenu">
+              <li>
+                <a href="#">Nightlife</a>
+              </li>
+              <li>
+                <a href="#">Food & Drink</a>
+              </li>
+              <li>
+                <a href="#">View</a>
+              </li>
+              <li>
+                <a href="#">Museums</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">History</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
         </ul>
       </nav>
-      <button className={`hamburger ${navActive ? 'active' : ''}`} onClick={handleNavToggle}>
+      <button
+        className={`hamburger ${navActive ? "active" : ""}`}
+        onClick={handleNavToggle}
+      >
         <div />
         <div />
         <div />
