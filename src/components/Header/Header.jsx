@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/img/logo-transparent.png"; // Update with your logo path
 
 function Header() {
   const [isScrollingUp, setIsScrollingUp] = useState(true);
@@ -30,6 +31,11 @@ function Header() {
         navActive ? "nav-active" : ""
       }`}
     >
+      <div className="header-logo">
+        <Link to="/">
+          <img src={logo} alt="Logo" />
+        </Link>
+      </div>
       <nav>
         <ul className="main-menu">
           <li>
@@ -55,11 +61,11 @@ function Header() {
           <li>
             <Link to="/history">History</Link>
           </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
         </ul>
       </nav>
+      <div className="contact-link">
+        <Link to="/contact">Contact</Link>
+      </div>
       <button
         className={`hamburger ${navActive ? "active" : ""}`}
         onClick={handleNavToggle}

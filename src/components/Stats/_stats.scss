@@ -18,7 +18,7 @@
   
       &:hover {
         transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(41, 40, 40, 0.2);
+        box-shadow: 0 8px 20px $secondary-color;
       }
   
       h2 {
