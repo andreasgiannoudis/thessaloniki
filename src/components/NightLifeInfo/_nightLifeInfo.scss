@@ -1,62 +1,82 @@
 .nightlife-info {
-    padding: 20px;
-    padding-top: 120px;
-    display: flex;
-    justify-content: center;
+  padding: 20px;
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 550px);
+  grid-template-rows: repeat(2, 300px);
+  grid-gap: 10px;
+  max-width: 100%;
+}
+
+.grid-item {
+  position: relative;
+  background-color: #444;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  font-size: 1rem;
+  text-align: center;
+
+  &:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
   }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 550px);
-    grid-template-rows: repeat(2, 300px);
-    grid-gap: 5px;
-  }
-  
-  .grid-item {
-    background-color: #444;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    font-size: 1rem;
-    text-align: center;
-    overflow: hidden; 
-  }
-  
-  .grid-item img {
+
+  img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     border-radius: 8px;
   }
-  
-  .item1 {
-    grid-column: span 2;
-    grid-row: span 1;
+
+  // Main content inside grid item
+  p {
+    z-index: 2;
   }
-  
-  .item2 {
-    grid-column: span 1;
-    grid-row: span 2;
-  }
-  
-  .item3,
-  .item4 {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  
-  @media (max-width: 768px) {
-    .grid-container {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      max-width: 100%;
-    }
-  
-    .grid-item {
-      grid-column: span 1;
-      grid-row: span 1;
+
+  // Hover content to be shown on hover
+  .hover-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    font-size: 0.9rem;
+    text-align: center;
+
+    p {
+      margin: 0;
     }
   }
-  
+
+  &:hover .hover-content {
+    transform: translateY(0);
+  }
+}
+
+// Layout adjustments for the grid
+.item1 {
+  grid-column: span 2;
+}
+
+.item2, .item3 {
+  grid-column: span 1;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
