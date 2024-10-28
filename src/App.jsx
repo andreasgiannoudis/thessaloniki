@@ -1,18 +1,26 @@
-import './App.scss'
-import Header from './components/Header/Header'
+import './App.scss';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Footer from './components/Footer/Footer'
-import HomePage from './pages/Homepage/HomePage'
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import HomePage from './pages/Homepage/HomePage';
+// import WhatToDoPage from './pages/WhatToDoPage/WhatToDoPage';
+import HistoryPage from './pages/HistoryPage/HistoryPage';
+// import ContactPage from './pages/ContactPage/ContactPage';
 
 function App() {
-
   return (
-    <>
+    <Router>
       <Header />
-      <HomePage />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        {/* <Route path="/what-to-do" element={<WhatToDoPage />} /> */}
+        <Route path="/history" element={<HistoryPage />} />
+        {/* <Route path="/contact" element={<ContactPage />} /> */}
+      </Routes>
       <Footer />
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;

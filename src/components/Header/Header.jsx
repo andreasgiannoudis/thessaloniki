@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [isScrollingUp, setIsScrollingUp] = useState(true);
@@ -32,30 +33,30 @@ function Header() {
       <nav>
         <ul className="main-menu">
           <li>
-            <a href="#">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li className="has-submenu">
-            <a href="#">What to do</a>
+            <Link to="/what-to-do">What to do</Link>
             <ul className="submenu">
               <li>
-                <a href="#">Nightlife</a>
+                <Link to="/nightlife">Nightlife</Link>
               </li>
               <li>
-                <a href="#">Food & Drink</a>
+                <Link to="/food-drink">Food & Drink</Link>
               </li>
               <li>
-                <a href="#">View</a>
+                <Link to="/view">View</Link>
               </li>
               <li>
-                <a href="#">Museums</a>
+                <Link to="/museums">Museums</Link>
               </li>
             </ul>
           </li>
           <li>
-            <a href="#">History</a>
+            <Link to="/history">History</Link>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>

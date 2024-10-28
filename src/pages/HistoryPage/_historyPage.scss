@@ -1,0 +1,41 @@
+.history-page {
+    padding: 2rem;
+    padding-top: 5rem;
+  
+    .history-hero {
+      text-align: center;
+      margin-bottom: 3rem;
+  
+      h1 {
+        font-size: 2.5rem;
+        color: #fff;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        color: #fff;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
+  
+    .history-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+  
+      article {
+        h2 {
+          font-size: 1.8rem;
+          color: #fff;
+        }
+  
+        p {
+          font-size: 1rem;
+          color: #fff;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+  

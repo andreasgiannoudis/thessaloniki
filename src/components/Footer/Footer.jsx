@@ -31,7 +31,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 Thessaloniki. All Rights Reserved.</p>
+        <p>&copy; 2024 Thessify. All Rights Reserved.</p>
       </div>
     </footer>
   );
