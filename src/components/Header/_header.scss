@@ -25,7 +25,7 @@
   .header-logo {
     margin-right: auto;
     img {
-      max-height: 100px; // Adjust based on logo size
+      max-height: 100px;
     }
   }
 
@@ -40,7 +40,7 @@
       text-decoration: none;
       font-size: 20px;
       padding: 8px 15px;
-      
+      font-weight: 500;
 
       
     }
@@ -65,10 +65,11 @@
           color: #fff;
           text-decoration: none;
           font-size: 20px;
+          font-weight: 500;
           transition: color 0.3s ease;
 
           &:hover {
-            color: $secondary-color; // Define this variable as needed
+            color: $secondary-color;
           }
         }
 
@@ -78,6 +79,7 @@
           }
 
           .submenu {
+            width: 200px;
             display: none;
             position: absolute;
             top: 100%;
@@ -93,6 +95,9 @@
               a {
                 color: #fff;
                 text-decoration: none;
+                &:hover {
+                  color: $secondary-color;
+                }
               }
             }
           }

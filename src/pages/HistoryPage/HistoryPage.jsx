@@ -1,11 +1,14 @@
 import React from 'react';
+import Timeline from './Timeline'; // Ensure this path is correct based on your file structure
 
 function HistoryPage() {
   return (
     <div className="history-page">
       <section className="history-hero">
         <h1>History of Thessaloniki</h1>
-        <p>Discover the vibrant history of Thessaloniki, a city shaped by centuries of diverse cultures, pivotal moments, and a spirit that has influenced the course of history.</p>
+        <p>
+          Discover the vibrant history of Thessaloniki, a city shaped by centuries of diverse cultures, pivotal moments, and a spirit that has influenced the course of history.
+        </p>
       </section>
 
       <section className="history-content">
@@ -44,6 +47,8 @@ function HistoryPage() {
           </p>
         </article>
       </section>
+
+      <Timeline /> {/* Add the Timeline component */}
     </div>
   );
 }

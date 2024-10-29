@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/img/logo-transparent.png"; // Update with your logo path
+import logo from "../../assets/img/logo-transparent.png";
 
 function Header() {
   const [isScrollingUp, setIsScrollingUp] = useState(true);

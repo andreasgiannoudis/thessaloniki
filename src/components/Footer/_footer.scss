@@ -10,6 +10,7 @@
     .footer-container {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       width: 100%;
       max-width: 1200px;
       margin-bottom: 20px;
@@ -21,8 +22,10 @@
     }
   
     .footer-logo {
-      font-size: 24px;
-      font-weight: bold;
+      
+      img{
+        max-height: 100px;
+      }
     }
   
     .footer-links {
@@ -44,7 +47,7 @@
             font-size: 16px;
   
             &:hover {
-              text-decoration: underline;
+              color: $secondary-color;
             }
           }
         }

@@ -7,6 +7,8 @@ import HomePage from './pages/Homepage/HomePage';
 // import WhatToDoPage from './pages/WhatToDoPage/WhatToDoPage';
 import HistoryPage from './pages/HistoryPage/HistoryPage';
 // import ContactPage from './pages/ContactPage/ContactPage';
+import FoodDrink from './pages/FoodDrink/FoodDrink';
+import NightLife from './pages/NightLife/NightLife';
 
 function App() {
   return (
@@ -17,6 +19,9 @@ function App() {
         {/* <Route path="/what-to-do" element={<WhatToDoPage />} /> */}
         <Route path="/history" element={<HistoryPage />} />
         {/* <Route path="/contact" element={<ContactPage />} /> */}
+        <Route path="/food-drink" element={<FoodDrink />} />
+        <Route path="/nightlife" element={<NightLife />} />
+
       </Routes>
       <Footer />
     </Router>
